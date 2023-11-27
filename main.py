@@ -37,7 +37,8 @@ class Example(QWidget):
             r = random.choice(range(1, 50))
             x = random.choice(range(0, 400))
             y = random.choice(range(0, 300))
-            qp.setBrush(QColor(255, 255, 0))
+            qp.setBrush(
+                QColor(random.choice(range(0, 255)), random.choice(range(0, 300)), random.choice(range(0, 300))))
             qp.drawEllipse(x, y, r, r)
 
 
